@@ -1,0 +1,14 @@
+{
+    "name": "Kood",
+    "alias": "kood",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Kood\\Providers\\KoodServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

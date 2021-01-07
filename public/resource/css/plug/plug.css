@@ -1,0 +1,6 @@
+.plug-box{padding:10px 0px;}
+.plug-box .cont-box{border:1px solid #eee;padding:5px;position: relative;overflow: hidden;}
+.plug-box .cont-box .plug-info{height: 120px;}
+.plug-box .plug-btn{position: absolute;bottom:5px;}
+.plug-box .layui-flow-more{width:100%;overflow: hidden;}
+.plug-desc{font-size:12px;}
