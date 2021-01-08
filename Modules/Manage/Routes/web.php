@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+dd(123);
 //根据用户类型选择首页
 Route::get('/', function () {
     return redirect(route('manage.index'));
