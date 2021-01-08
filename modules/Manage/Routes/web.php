@@ -16,8 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('login', 'LoginController@login')->name("login");
-
-    dd(555);
 Route::post('login', 'LoginController@loginSubmit')->name("login.submit");
 Route::post('logout', 'LoginController@logout')->name("logout");
 Route::get('unauthorized', 'LoginViewController@unauthorized')->name("unauthorized");
@@ -113,3 +111,4 @@ Route::group(['middleware' => ['auth:manage', 'permission']], function () {
     Route::get('manage-menu/menus', 'ManageMenuController@menus')->name('manage-menu.menus');
 });
 
+dd(222);
