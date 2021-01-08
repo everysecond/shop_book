@@ -13,6 +13,7 @@ class LoginController extends Controller
 {
     public function login()
     {
+        dd(213);
         return view('manage::login.login');
     }
 
