@@ -35,6 +35,7 @@ class ManageMenuRepository extends BaseRepository
      */
     public function boot()
     {
+        dd(12300);
         $this->pushCriteria(app(RequestCriteria::class));
     }
 
