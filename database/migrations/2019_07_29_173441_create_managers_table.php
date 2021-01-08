@@ -21,6 +21,9 @@ class CreateManagersTable extends Migration {
 			$table->string('password', 100)->default('')->comment('密码');
 			$table->string('remember_token', 100)->default('')->comment('记住密码');
 			$table->boolean('status')->default(0)->comment('管理员状态：1正常，2冻结');
+            $table->string('code', 16)->nullable()->comment('验证码');
+            $table->string('access_token', 50)->nullable()->comment('access_token');
+            $table->integer('access_at')->unsigned()->nullable()->comment('api最后登录时间');
 			$table->bigInteger('created_at')->unsigned()->nullable();
 			$table->bigInteger('updated_at')->unsigned()->nullable();
 			$table->bigInteger('deleted_at')->unsigned()->nullable();

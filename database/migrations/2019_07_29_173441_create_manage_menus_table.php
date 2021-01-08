@@ -22,6 +22,7 @@ class CreateManageMenusTable extends Migration {
 			$table->string('icon', 200)->default('')->comment('样式');
 			$table->boolean('status')->default(1)->comment('状态(1 显示 0 隐藏)');
 			$table->boolean('level')->default(1)->comment('层级');
+            $table->string('terminal')->nullable(false)->default('web')->comment('菜单所属终端');
 		});
         \Illuminate\Support\Facades\DB::statement("ALTER TABLE `manage_menus` comment '菜单管理表'");//表注释
 	}
