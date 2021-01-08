@@ -21,7 +21,7 @@ Route::post('logout', 'LoginController@logout')->name("logout");
 Route::get('unauthorized', 'LoginViewController@unauthorized')->name("unauthorized");
 //验证是否登陆中间件
 Route::group([
-    'middleware' => ['auth:manage', 'permission'],
+    'middleware' => [],
     'prefix'     => 'manage'
 ], function () {
     //后台首页
@@ -110,5 +110,3 @@ Route::group(['middleware' => ['auth:manage', 'permission']], function () {
     Route::resource('manage-menu', 'ManageMenuController')->except('show');
     Route::get('manage-menu/menus', 'ManageMenuController@menus')->name('manage-menu.menus');
 });
-
-dd(222);
