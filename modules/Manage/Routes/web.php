@@ -15,7 +15,7 @@ Route::get('/', function () {
     return redirect(route('manage.index'));
 });
 
-Route::get('login', 'LoginController@login')->name("login")
+Route::get('login', 'LoginController@login')->name("login");
 
     dd(555);
 Route::post('login', 'LoginController@loginSubmit')->name("login.submit");
