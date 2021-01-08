@@ -21,7 +21,7 @@ Route::post('logout', 'LoginController@logout')->name("logout");
 Route::get('unauthorized', 'LoginViewController@unauthorized')->name("unauthorized");
 //验证是否登陆中间件
 Route::group([
-    'middleware' => [],
+    'middleware' => ['auth:manage', 'permission'],
     'prefix'     => 'manage'
 ], function () {
     //后台首页
