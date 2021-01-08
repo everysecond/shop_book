@@ -24,6 +24,7 @@ class ManageController extends Controller
 
     public function index()
     {
+        dd(123);
         $menuList = $this->menuRepository->scopeQuery(function ($query) {
             return $query->whereStatus(1)->where('terminal','web')->orderBy('sort');
         })->get();
