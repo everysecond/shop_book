@@ -26,7 +26,6 @@ class ManageMenuRepository extends BaseRepository
      */
     public function model()
     {
-        dd(0000);
         return ManageMenu::class;
     }
 
@@ -36,13 +35,11 @@ class ManageMenuRepository extends BaseRepository
      */
     public function boot()
     {
-        dd(12300);
         $this->pushCriteria(app(RequestCriteria::class));
     }
 
     public function getParents($pid)
     {
-        dd(12300);
         $parents = new Collection();
 
         if ($model = $this->model->where('id', $pid)->first()) {
