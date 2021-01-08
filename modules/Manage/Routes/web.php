@@ -24,6 +24,7 @@ Route::group([
     'middleware' => [],
     'prefix'     => 'manage'
 ], function () {
+    dd(222222);
     //后台首页
     Route::get('/', 'ManageController@index')->name('manage.index');
     Route::get('console', 'ManageController@console')->name('manage.console');
